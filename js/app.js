@@ -10,7 +10,6 @@ function LunchCheckController($scope) {
   $scope.message = "";
 
   $scope.checkIfTooMuch = function () {
-  	//$scope.dishes = $scope.dishes.replace(/ /g,''); // alt way for remove all white spaces
   	$scope.dishes = $scope.dishes.trim();
 
   	// the next two lines are intended to check if after removing all white spaces and
@@ -28,9 +27,9 @@ function LunchCheckController($scope) {
 	  	if(dishes.length <= 3)
 	      $scope.message = "Enjoy!";
 	    else
-	      $scope.message = "Too much!"; 
+	      $scope.message = "Too much!";
 
-	    $scope.messageColor = "green";	
+	    $scope.messageColor = "green";
   	}
 
   };
